@@ -1,0 +1,165 @@
+.entry-nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+   
+}
+.nav-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+}
+.drop-down{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+
+}
+.entry-sign{
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    padding-right: 10px;
+    padding: 10px;
+    margin-left: 15px;
+}
+.entry-sign:hover{
+    background-color: rgb(222, 4, 4);
+    color: white;
+
+}
+.banner{
+    background-image: url("../../../public/images/netflix-banner.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.shade{
+    background-color: rgba(0,0,0,0.6);
+    height: 100vh;
+}
+.banner-section{
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+.title-one{
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.title-two{
+    font-size: 30px;
+
+}
+.main-title{
+    font-size: 20px;
+
+}
+.btnStart{
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+}
+.btnStart:hover{
+    background-color: rgb(169, 4, 4);
+    font-size: 20px;
+    color: white;
+
+}
+@media screen and (max-width:992px) {
+    .title-one{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .title-two{
+        font-size: 25px;
+    
+    }
+    .main-title{
+        font-size: 18px;
+    
+    }
+    .btnStart{
+        font-size: 15px;
+        border-radius: 8px;
+        padding: 5px;
+    }
+    .banner-section{
+        margin-top: 150px;
+    }
+    
+}
+@media screen and (max-width:775px){
+    .title-one{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .title-two{
+        font-size: 20px;
+    
+    }
+    .main-title{
+        font-size: 15px;
+    
+    }
+    .btnStart{
+        font-size: 18px;
+        border-radius: 8px;
+        padding: 5px;
+    }
+    .drop-down{
+        padding: 2px;
+        border-radius: 10px;
+    
+    }
+    .entry-sign{
+        font-size: 18px;
+        border-radius: 5px;
+        padding-right: 10px;
+        padding: 10px;
+        margin-left: 15px;
+    }
+    .banner-section{
+        margin-top: 180px;
+    }
+
+}
+@media screen and (max-width:550px){
+    .nav-title{
+        font-size: 30px;
+    }
+    .drop-down{
+        padding: 1px;
+        border-radius: 12px;
+    
+    }
+    .entry-sign{
+        font-size: 15px;
+        padding: 8px;
+    }
+    .banner-section{
+        margin-top: 200px;
+    }
+    .title-one{
+        font-size: 20px;
+        font-weight: bold;
+    
+    }
+    .title-two{
+        font-size: 18px;
+    
+    }
+    .main-title{
+        font-size: 13px;
+    
+    }
+    .btnStart{
+        font-size: 15px;
+        border-radius: 10px;
+        padding: 8px;
+    }
+}

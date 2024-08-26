@@ -1,0 +1,109 @@
+.bg-style{
+    background-image: url(../../../public/images/netflix-banner.jpg);
+    background-size: cover ;
+    height: 100vh;
+    
+
+}
+.bg-shade{
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+
+}
+.login-nav{
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.login-section{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+   
+   
+}
+.form{
+     background-color: rgba(0,0,0,0.5);
+     padding: 40px;
+     border-radius: 10px;
+     width: 30%;
+    
+
+}
+input[type="text"]{
+    background-color: rgba(0,0,0,0.5);
+    border:1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+ 
+    
+}
+input[type="password"]{
+    background-color: rgba(0,0,0,0.5);
+    border:1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+}
+.btnSignin{
+    background-color: red;
+    width: 100%;
+    color: white;
+}
+.btnSignin:hover{
+    background-color: rgb(180, 5, 5);
+}
+.btnUse:hover{
+    background-color: rgb(66, 66, 66);
+}
+@media screen and (max-width:1200px){
+    .form{
+        background-color: rgba(0,0,0,0.5);
+        padding: 30px;
+        border-radius: 10px;
+        width: 35%;
+        margin-top: -35px;
+   }
+
+}
+@media screen and (max-width:997px){
+    .form{
+        background-color: rgba(0,0,0,0.5);
+        padding: 10px;
+        border-radius: 10px;
+        width: 55%;
+        margin-top: -35px;
+   }
+
+}
+@media screen and (max-width:768px){
+    .form{
+        background-color: rgba(0,0,0,0.5);
+        padding: 10px;
+        border-radius: 10px;
+        width: 60%;
+        margin-top: -35px;
+   }
+
+}
+@media screen and (max-width:550px){
+    .form{
+        background-color: rgba(0,0,0,0.5);
+        padding: 10px;
+        border-radius: 10px;
+        width: 70%;
+        margin-top: -15px;
+   }
+   .login-nav{
+    color: red;
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+}
