@@ -36,7 +36,7 @@ export function Home() {
     chunkedData.push(data.slice(i, i + 6));
   }
   return (
-    <div className="container-fluid">
+    <div className="container-fluids">
       <header>
         <nav className="home-nav">
           <div >

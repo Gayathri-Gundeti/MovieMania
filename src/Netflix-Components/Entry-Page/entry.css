@@ -71,6 +71,9 @@
 
 }
 @media screen and (max-width:992px) {
+    .banner{
+        margin: 0px -15px;
+    }
     .title-one{
         font-size: 30px;
         font-weight: bold;
@@ -94,6 +97,9 @@
     
 }
 @media screen and (max-width:775px){
+    .banner{
+        margin: 0px -15px;
+    }
     .title-one{
         font-size: 25px;
         font-weight: bold;
@@ -129,6 +135,9 @@
 
 }
 @media screen and (max-width:550px){
+    .banner{
+        margin: 0px -15px;
+    }
     .nav-title{
         font-size: 30px;
     }
@@ -162,4 +171,8 @@
         border-radius: 10px;
         padding: 8px;
     }
+    .btnStart:hover{
+        font-size: 15px;
+    }
+    
 }
