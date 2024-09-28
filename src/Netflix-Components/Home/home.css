@@ -157,7 +157,7 @@ h2{
 .card-track {
     display: flex;
     gap: 15px;
-    animation: scroll 20s linear infinite;
+    animation: scroll 20s infinite linear;
 }
 .card-track:hover{
     animation-play-state: paused;
