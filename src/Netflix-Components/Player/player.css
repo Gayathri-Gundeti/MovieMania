@@ -4,11 +4,12 @@ iframe{
 }
 .bi-arrow-left-circle{
     font-size: 25px;
+    color: #fbd126;
    
    
 }
 .bi-arrow-left-circle:hover{
-    color: red;
+   color:#FFBF00;
 }
 .player{
     background-color: black;

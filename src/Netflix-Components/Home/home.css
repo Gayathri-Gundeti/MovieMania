@@ -1,22 +1,21 @@
-
-
 header{
-    background-image: url("../../../public/images/new-dark-lion.jpg");
+    background-image: url("../../../public/images/home-bg.webp");
     background-size: cover;
     height: 100vh;
-    margin: 0px -20px 0px -20px;
-   
-    
+    margin: 0px -20px 0px -20px;  
 }
-
+#bg-shade{
+    background-color: rgba(0,0,0,0.7);
+    height: 100vh;
+}
 .bi-justify{
     border: none;
     background:none;
-    color: white;
+    color: #FFBF00;
     font-size: 30px;
 }
 .bi-justify:hover{
-    color: red;
+    color: #FFBF00;
 }
 .home-nav{
     display: flex;
@@ -25,11 +24,15 @@ header{
     padding: 20px;
     color: white;
 }
+.bi-power{
+    color: #fbd126;
+    font-size: 30px;
+}
 .bi-power:hover{
-    color: red;
+    color: #FFBF00;
 }
 .title{
-    color: red;
+    color: #FFBF00;
     font-size: 35px;
     font-weight: bold;
 
@@ -41,6 +44,14 @@ header{
     margin-left: 20px;
     font-size: 18px;
 }
+.list-items a{
+    text-decoration: none;
+    color: white;
+}
+.list-items a:hover{
+    text-decoration: underline;
+    color: #fbd126;
+}
 .nav-icons span{
     margin-left: 10px;
     margin-right: 15px;
@@ -48,112 +59,45 @@ header{
 .movie-title {
     margin-top: 300px;
     color: white;
-    font-size: 50px;
-    margin-left: 50px;
-    font-family: Algerain;
+    padding: 0px 50px;
+    width: 80%;  
 }
-.lion-title{
-   margin-top: -25px;
+#main-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #fbd126;
+}
 
-}
-.lion-the{
-    margin-left: 65px;
-}
-.lion-des{
-    font-size: 20px;
-}
-.buttons{
-    margin-left: 55px;
-}
-#play{
-    background: rgb(206, 200, 200);
+#watch{
+    border: 1px solid #fbd126;
+    background-color: #fbd126;
     padding-right: 20px;
-    margin-right: 15px;
-    
+    margin-right: 15px;   
 }
-#more-info{
-    background: gray
 
-}
-.home-main{
+.cards{
+    display: flex;
+    overflow: auto;
+    scrollbar-width: none;
+  
+  }
+  #card-img img{
+    margin-right: 15px;
+    width: 250px;
+    height: 250px;
+  }
+#home-main{
     background-color: black;
     color: white;
     padding: 10px;
-    margin: 0px -20px 0px -20px;
+    margin: 0px -15px;
 }
-.carousel-section{
-    margin: auto;
-    width: 90%;
-}
-
-/* .card{
-    margin-left: 10px;
-} */
-#movie-cards{
-    margin-left: 10px;
-}
-
-#banners1 .carousel-control-prev {
-    left: -3%;
-    background-color: white;
-    width: 20px;
-    height: 30px;
-    margin-top: 250px;
-  }
-  
-  #banners1 .carousel-control-next {
-    right: -3%;
-    background-color: white;
-    width: 20px;
-    height: 30px;
-    margin-top: 250px;
-
-  } 
-
-  #banners2 .carousel-control-prev {
-    left: -3%;
-    background-color: white;
-    width: 20px;
-    height: 30px;
-    margin-top: 250px;
-  }
-  
-  #banners2 .carousel-control-next {
-    right: -3%;
-    background-color: white;
-    width: 20px;
-    height: 30px;
-    margin-top: 250px;
-
-  } 
-  #banners3 .carousel-control-prev {
-    left: -3%;
-    background-color: white;
-    width: 20px;
-    height: 30px;
-    margin-top: 250px;
-  }
-  
-  #banners3 .carousel-control-next {
-    right: -3%;
-    background-color: white;
-    width: 20px;
-    height: 30px;
-    margin-top: 250px;
-
-  } 
-h2{
-    margin-top: 30px;
-}
-
 .card-flex {
     display: flex;
     overflow: hidden;
     width: 100%;
 
 }
-
-
 .card-track {
     display: flex;
     gap: 15px;
@@ -163,10 +107,6 @@ h2{
     animation-play-state: paused;
 }
 
-.card-flex img {
-    width: 100%;
-    height: 250px;
-}
 
 #scrolling-image img{
     width: 250px;
@@ -219,426 +159,99 @@ footer .bi{
     
 }
 .bi-play:hover{
-    background-color: red;
+    background-color: #FFBF00;
 }
-
-@media screen and (max-width:1200px){
+@media screen and (max-width:992px) {
+    .movie-title {
+        margin-top: 350px;
+        color: white;
+        padding: 0px 50px;
+        width: 100%;  
+    }
+    
+}
+@media screen and (max-width:772px) {
     header{
-        background-image: url("../../../public/images/new-dark-lion.jpg");
-        background-size: 100% 90vh;
-        height: 90vh;
-        
+        height: 80vh;
     }
     .movie-title {
-        margin-top: 500px;
+        margin-top: 350px;
+        color: white;
+        padding: 0px 50px;
+        width: 100%;  
     }
-    .lion-title{
-        margin-left: -15pxf;
+    #main-title{
         font-size: 30px;
-     
-     }
-     .lion-the{
-         margin-top: -85px;
-         margin-left: 45px;
-         font-size: 30px;
-     }
-     .lion-des{
-         font-size: 18px;
-         margin-left: -15px;
-     }
-     #play{
-        background: rgb(206, 200, 200);
-        padding-right: 20px;
-        margin-right: 15px;
+        font-weight: bold;
+        color: #fbd126;
+    }
+    #description{
         font-size: 15px;
-        
     }
-    #more-info{
-        background: gray;
+    #watch{
         font-size: 15px;
-    
     }
-    .card {
-        margin-bottom: 18px; 
-        max-width: 200px; 
-        height: 280px;
-      }
-      .card-flex img {
-        width:100%;
-        height: 200px;
-    }
-    #scrolling-image img{
-        width: 200px;
-        height: 250px;
-    }
-    #resp-cards {
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-    #banners1 .carousel-control-prev {
-        margin-top: 400px;
-      }
-      
-      #banners1 .carousel-control-next {
-        margin-top: 400px;
-    
-      } 
-      #banners2 .carousel-control-prev {
-        margin-top: 400px;
-      }
-      
-      #banners2 .carousel-control-next {
-        margin-top: 400px;
-    
-      } 
-      #banners3 .carousel-control-prev {
-        margin-top: 400px;
-      }
-      
-      #banners3 .carousel-control-next {
-        margin-top: 400px;
-    
-      } 
-   
 
+    
 }
-
-@media screen and (max-width:992px){
+@media screen and (max-width:399px) {
     header{
-        background-image: url("../../../public/images/new-dark-lion.jpg");
-        background-size: 100% 80vh;
-        height: 80vh;
-        
-    }
-    .card {
-        margin-bottom: 15px; 
-        max-width: 180px; 
-        height: 250px;
-      }
-      .card-flex img {
-        width:100%;
-        height: 180px;
-    }
-    #scrolling-image img{
-        width: 200px;
-        height: 180px;
-    }
-    .list-items span{
-       display: none;
-      
+        height: 70vh;
     }
     .bi-justify{
         display: inline;
-        
-    }
-
-    
-    .movie-title {
-        margin-top: 400px;
-        color: white;
-        font-size: 50px;
-        margin-left: 50px;
-        font-family: Algerain;
-    }
-    .lion-title{
-       margin-left: -15pxf;
-       font-size: 35px;
-    
-    }
-    .lion-the{
-        margin-top: -85px;
-        margin-left: 45px;
         font-size: 25px;
     }
-    .lion-des{
-        font-size: 18px;
-        margin-left: -15px;
+    .dropdown-item a{
+        text-decoration: none;
+        color: #fbd126;
     }
-    .buttons{
-        margin-left: 35px;
-        margin-top: -10px;
-    }
-   
-    #play{
-        background: rgb(206, 200, 200);
-        padding-right: 20px;
-        margin-right: 15px;
-        font-size: 15px;
-        
-    }
-    #more-info{
-        background: gray;
-        font-size: 15px;
-    
-    }
-    #resp-cards {
-        flex-wrap: wrap;
-        justify-content: space-around;
+    .dropdown-menu {
+        background-color: black !important; 
+        border: none; 
+        padding: 10px;
       }
-   
-}
-
-@media screen and (max-width:768px){
-    header{
-        background-image: url("../../../public/images/new-dark-lion.jpg");
-        background-size: 100% 80vh;
-        height: 80vh;
-        
+    .list-items span{
+        display: none;
     }
     .title{
-        font-size: 30px;
-    }
-    .home-nav{
-        font-size: 20px;
-    }
-     
-    .home-main{
-        background-color: black;
-        color: white;
-        padding: 10px;
-        width: 106%;
-    }
-    .list-items span{
-      display: none;
-    }
-    .bi-justify{
-        display: inline;
+        color: #FFBF00;
+        font-size: 25px;
+    
     }
     .movie-title {
-        margin-top: 380px;
+        margin-top: 100px;
         color: white;
-        font-size: 50px;
-        margin-left: 50px;
-        font-family: Algerain;
+        padding: 0px 50px;
+        width: 100%;  
     }
-    .lion-title{
-       margin-left: -15pxf;
-       font-size: 35px;
-    
+    #main-title{
+        font-size: 20px;
+        font-weight: bold;
+        color: #fbd126;
     }
-    .lion-the{
-        margin-top: -85px;
-        margin-left: 45px;
-        font-size: 25px;
-    }
-    .lion-des{
-        font-size: 15px;
-        margin-left: -15px;
-    }
-    .buttons{
-        margin-left: 35px;
-        margin-top: -10px;
-    }
-    #play{
-        background: rgb(206, 200, 200);
-        padding-right: 20px;
-        margin-right: 15px;
-        font-size: 15px;
-    }
-    #more-info{
-        background: gray;
-        font-size: 15px;
-    
-    }
-    .card {
-        margin-bottom: 15px; 
-        max-width: 150px; 
-        height: 200px;
-      }
-      .card-flex img {
-        width:100%;
-        height: 120px;
-    }
-    #scrolling-image img{
-        width: 200px;
-        height: 150px;
-    }
-    #resp-cards {
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-    .carousel-section{
-        height: 550px;
-    }
-    #banners1 .carousel-control-prev {
-        margin-top: 280px;
-      }
-      
-      #banners1 .carousel-control-next {
-        margin-top: 280px;
-    
-      } 
-      #banners2 .carousel-control-prev {
-        margin-top: 280px;
-      }
-      
-      #banners2 .carousel-control-next {
-        margin-top: 280px;
-    
-      } 
-      #banners3 .carousel-control-prev {
-        margin-top: 280px;
-      }
-      
-      #banners3 .carousel-control-next {
-        margin-top: 280px;
-    
-      } 
-   
-   
-}
-
-
-@media screen and (max-width:576px){
-    header{
-        background-image: url("../../../public/images/new-dark-lion.jpg");
-        background-size: 100% 80vh;
-        height: 80vh;
-        
-    }
-   
-    .list-items span{
-       display: none;
-    }
-    .bi-justify{
-        display: inline;
-    }
-    .movie-title{
-        margin-top: 380px;
-    }
-   
-    .lion-title{
-       margin-top: -25px;
-       margin-left: -15px;
-       font-size: 25px;
-    
-    }
-    .lion-the{
-        margin-left: 25px;
-        font-size: 25px;
-    }
-    .lion-des{
-        font-size: 13px;
-    }
-    #resp-cards {
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-      .bi-play{
+    #description{
         font-size: 12px;
     }
-     .home-main{
-        background-color: black;
-        color: white;
-        padding: 10px;
-        width: 111%;
-    } 
-   
-    
-    .card-flex {
-        display: flex;
-        overflow: hidden;
-        width: 100%;
-    
-    } 
-    .card-flex img {
-        width:100%;
-        height: 120px;
+    #watch{
+        font-size: 12px;
     }
     #scrolling-image img{
         width: 150px;
-        height: 120px;
-    }
-    footer{
-        font-size: 13px;
-    }
-    .card {
-        margin-bottom: 15px; 
-        max-width: 150px; 
         height: 150px;
-      }
-      #play{
-        background: rgb(206, 200, 200);
-        padding-right: 20px;
+    }
+    #card-img img{
         margin-right: 15px;
-        font-size: 13px;
-    }
-    #more-info{
-        background: gray;
-        font-size: 13px;
-    
-    }
-    .carousel-section{
-        height: 600px;
-    }
-      #banners1 .carousel-control-prev {
-        margin-top: 300px;
-      }
-      
-      #banners1 .carousel-control-next {
-        margin-top: 300px;
-    
-      } 
-      #banners2 .carousel-control-prev {
-        margin-top: 300px;
-      }
-      
-      #banners2 .carousel-control-next {
-        margin-top: 300px;
-    
-      } 
-      #banners3 .carousel-control-prev {
-        margin-top: 300px;
-      }
-      
-      #banners3 .carousel-control-next {
-        margin-top: 300px;
-    
-      } 
-     
-
-}
-  @media screen and (max-width:399px) {
-    .card{
-        max-width: 130px;
-        height: 150px;
-    }
-    .card-flex img {
-        width:100%;
-        height: 100px;
-    }
-    #scrolling-image img{
         width: 150px;
-        height: 100px;
-    }
-    .bi-play{
-        font-size: 10px;
-    }
-    #resp-cards {
-        flex-wrap: wrap;
-        justify-content: space-around;
+        height: 150px;
       }
-    .movie-title{
-        margin-top: 280px;
-      }
-    .bi-justify{
-        font-size: 22px;
+      .services{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+        color: gray;
+      
     }
-    .title{
-        color: red;
-        font-size: 25px;
-        font-weight: bold;
-    
-    }
-    .home-main{
-        background-color: black;
-        color: white;
-        padding: 10px;
-        width: 112%;
-    } 
-    .carousel-section{
-        height: 600px;
-    }
-    
-  }
 
+   
+}

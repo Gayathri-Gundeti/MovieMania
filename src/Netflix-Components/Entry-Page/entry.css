@@ -1,13 +1,13 @@
 .entry-nav{
     display: flex;
-    justify-content: space-around;
-    padding: 15px;
+    justify-content: space-between;
+    padding: 20px;
    
 }
 .nav-title{
     font-size: 35px;
     font-weight: bold;
-    color: red;
+    color: #fbd126;
 }
 .drop-down{
     padding: 5px;
@@ -17,7 +17,7 @@
 
 }
 .entry-sign{
-    background-color: red;
+    background-color: #fbd126;
     color: white;
     font-size: 18px;
     border-radius: 5px;
@@ -26,23 +26,25 @@
     margin-left: 15px;
 }
 .entry-sign:hover{
-    background-color: rgb(222, 4, 4);
+    background-color: #FFBF00;
     color: white;
 
 }
 .banner{
-    background-image: url("../../../public/images/netflix-banner.jpg");
+    background-image: url("../../../public/images/banner.jpg");
     background-size: cover;
     height: 100vh;
+    margin: 0px -12px 0px -12px; 
 }
 .shade{
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.5);
     height: 100vh;
 }
 .banner-section{
     color: white;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 250px;
+
 }
 .title-one{
     font-size: 40px;
@@ -58,14 +60,14 @@
 
 }
 .btnStart{
-    background-color: red;
+    background-color: #fbd126;
     font-size: 20px;
     color: white;
     border-radius: 8px;
     padding: 8px;
 }
 .btnStart:hover{
-    background-color: rgb(169, 4, 4);
+    background-color: #FFBF00;
     font-size: 20px;
     color: white;
 
@@ -92,7 +94,7 @@
         padding: 5px;
     }
     .banner-section{
-        margin-top: 150px;
+        margin-top: 350px;
     }
     
 }
@@ -130,7 +132,8 @@
         margin-left: 15px;
     }
     .banner-section{
-        margin-top: 180px;
+        margin-top: 350px;
+        padding: 10px;
     }
 
 }
@@ -151,7 +154,7 @@
         padding: 8px;
     }
     .banner-section{
-        margin-top: 200px;
+        margin-top: 350px;
     }
     .title-one{
         font-size: 20px;
@@ -175,4 +178,26 @@
         font-size: 15px;
     }
     
+}
+@media screen and (max-width:399px){
+    .nav-title{
+        font-size: 25px;
+    }
+    .title-one{
+        font-size: 18px;
+        font-weight: bold;
+    
+    }
+    .title-two{
+        font-size: 15px;
+    
+    }
+    .main-title{
+        font-size: 12px;
+    
+    }
+    .banner-section{
+        margin-top: 180px;
+    }
+
 }

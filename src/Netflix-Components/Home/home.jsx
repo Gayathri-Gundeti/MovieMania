@@ -36,52 +36,45 @@ export function Home() {
     chunkedData.push(data.slice(i, i + 6));
   }
   return (
-    <div className="container-fluids">
+    <div id="#container">
       <header>
+        <div id="bg-shade">
         <nav className="home-nav">
           <div >
             <span id="menu">
               <button className="bi bi-justify" data-bs-toggle="dropdown" data-bs-target="#menu"></button>
               <ul className="dropdown-menu">
-                <li className="dropdown-item">Home</li>
-                <li className="dropdown-item">TVShows</li>
-                <li className="dropdown-item">Movies</li>
-                <li className="dropdown-item">New&Popular</li>
-                <li className="dropdown-item">MyList</li>
-                <li className="dropdown-item">BrowseByLanguages</li>
+                <li className="dropdown-item"><a href="#">Home</a></li>
+                <li className="dropdown-item"><a href="#popular">Popular</a></li>
+                <li className="dropdown-item"><a href="#blockbuster">Blockbuster</a></li>
+                <li className="dropdown-item"><a href="#latest">Latest</a></li>
+                <li className="dropdown-item"><a href="#toppics">TopPics</a></li>
               </ul>
             </span>
-            <span className="title ms-4">NETFLIX</span>
+            <span className="title ms-4">MovieMania</span>
           </div>
           <div className="list-items">
-           <span>Home</span>
-            <span>TVShows</span>
-            <span>Movies</span>
-            <span>New&Popular</span>
-            <span>MyList</span>
-            <span>BrowseByLanguages</span>
+          <a href="#"><span>Home</span></a>
+          <a href="#popular"><span>Popular</span></a>
+          <a href="#blockbuster"><span>Blockbuster</span></a>
+          <a href="#latest"><span>Latest</span></a>
+          <a href="#toppics"><span>TopPics</span></a>
           </div>
           <div className="nav-icons">
-            <span className="bi bi-search"></span>
-            <span className="bi bi-bell"></span>
             <span className="bi bi-power" title="SignOut" onClick={handleSignoutClick}></span>
           </div>
         </nav>
         <div className="movie-title">
-
-          <p className="lion-the"> THE</p>
-          <p className="lion-title">LION KING</p>
-          <p className="lion-des">Disney's The Lion King is about a young lion named Simba,<br /> who is the crown prince of an African Savanna. When his father dies in an accident staged by his uncle, <br />Simba is made to feel responsible for his father's death and must overcome his fear of taking responsibility as the rightful heir to the throne.</p>
+              <p id="main-title">Despicable me 4</p>
+              <p id="description">The film sees reformed supervillain and secret agent Gru (Carell) relocate his family to a safe house when his old rival Maxime Le Mal (Ferrell) seeks revenge. Subplots deal with Gru's family adjusting to their new lives, teenage neighbor Poppy Prescott (King) trying to follow in Gru's villainous footsteps, and a group of Gru's Minions (Coffin) becoming superheroes.</p>
+              <button className=" btn bi bi-play-fill" id="watch">Watch Now</button>
         </div>
-        <div className="buttons">
-          <button className=" btn bi bi-play-fill" id="play">Play</button>
-          <button className=" btn bi bi-info-circle" id="more-info">More Info</button>
         </div>
       </header>
-      <main className="home-main">
-        <section>
+      <main id="home-main">
+        <section id="popular">
           <div >
-            <h2 className="mb-4 ms-3">Popular on Netflix</h2>
+            <h2 className="mb-4 ms-3">Popular on MovieMonia</h2>
             <div className="card-flex" id="scrolling-image">
               <div className="card-track">
                 {
@@ -101,145 +94,70 @@ export function Home() {
           </div>
         </section>
 
-        <section className="carousel-section">
-          <div id="banners1" className="carousel slide" data-bs-theme="dark">
-            <div className="carousel-inner">
-              {chunkedData.map((chunk, index) => (
-                <div
-                  className={`carousel-item ${index === 0 ? "active" : ""}`}
-                  key={index}
-                >
-                  <h2 className="mb-4 ms-3">Blockbuster Movies</h2>
-                  <div className="card-flex d-flex justify-content-around" id="resp-cards">
-                    {chunk.map((item) => (
-                      <div key={item.id} className="card" id="movie-cards">
-                        <img
-                          src={`https://image.tmdb.org/t/p/w200${item.backdrop_path}`}
-                          className="card-img-top"
-                          alt={item.original_title}
-                        />
-                        <div className="card-body ">
-                          <span className="card-title" >{item.original_title}</span>
-                          <Link to={`/player/${item.id}`}><span className="bi bi-play"></span></Link>
-                        </div>
+        <section id="blockbuster">
+          <div >
+            <h2 className="mb-4 ms-3">Blockbuster Movies</h2>
+            <div className="cards">
+              
+                {
+                  data.map(item =>
+                    <div>
+                      <div id="card-img"><img key={item.id} src={`https://image.tmdb.org/t/p/w200${item.backdrop_path}`} height="200" /> </div>
+                      <div className="my-3">
+                        <span>{item.original_title}</span>
+                        <Link to={`/player/${item.id}`}><span className="bi bi-play"></span></Link>
                       </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
+
+                    </div>
+                  )
+                }
+              
             </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#banners1"
-              data-bs-slide="prev"
-            >
-              <span className="carousel-control-prev-icon"></span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#banners1"
-              data-bs-slide="next"
-            >
-              <span className="carousel-control-next-icon"></span>
-            </button>
+          </div>
+        </section>
+        <section id="latest">
+          <div >
+            <h2 className="mb-4 ms-3">Latest on MovieMonia</h2>
+            <div className="cards">
+              
+                {
+                  data.map(item =>
+                    <div>
+                      <div id="card-img"><img key={item.id} src={`https://image.tmdb.org/t/p/w200${item.backdrop_path}`} height="200" /> </div>
+                      <div className="my-3">
+                        <span>{item.original_title}</span>
+                        <Link to={`/player/${item.id}`}><span className="bi bi-play"></span></Link>
+                      </div>
+
+                    </div>
+                  )
+                }
+              
+            </div>
           </div>
         </section>
 
-        <section className="carousel-section">
-          <div id="banners2" className="carousel slide" data-bs-theme="dark">
-            <div className="carousel-inner">
-              {chunkedData.map((chunk, index) => (
-                <div
-                  className={`carousel-item ${index === 0 ? "active" : ""}`}
-                  key={index}
-                >
-                  <h2 className="mb-4 ms-3">Only on Netflix</h2>
-                  <div className="card-flex d-flex justify-content-around" id="resp-cards">
-                    {chunk.map((item) => (
-                      <div key={item.id} className="card" id="movie-cards">
-                        <img
-                          src={`https://image.tmdb.org/t/p/w200${item.backdrop_path}`}
-                          className="card-img-top"
-                          alt={item.original_title}
-                        />
-                        <div className="card-body ">
-                          <span className="card-title" >{item.original_title}</span>
-                          <Link to={`/player/${item.id}`}><span className="bi bi-play"></span></Link>
-                        </div>
+        <section id="toppics">
+          <div >
+            <h2 className="mb-4 ms-3">Top Pics for You</h2>
+            <div className="cards">
+              
+                {
+                  data.map(item =>
+                    <div>
+                      <div id="card-img"><img key={item.id} src={`https://image.tmdb.org/t/p/w200${item.backdrop_path}`} height="200" /> </div>
+                      <div className="my-3">
+                        <span>{item.original_title}</span>
+                        <Link to={`/player/${item.id}`}><span className="bi bi-play"></span></Link>
                       </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
+
+                    </div>
+                  )
+                }
+              
             </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#banners2"
-              data-bs-slide="prev"
-            >
-              <span className="carousel-control-prev-icon"></span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#banners2"
-              data-bs-slide="next"
-            >
-              <span className="carousel-control-next-icon"></span>
-            </button>
           </div>
         </section>
-
-
-        <section className="carousel-section">
-          <div id="banners3" className="carousel slide" data-bs-theme="dark">
-            <div className="carousel-inner">
-              {chunkedData.map((chunk, index) => (
-                <div
-                  className={`carousel-item ${index === 0 ? "active" : ""}`}
-                  key={index}
-                >
-                  <h2 className="mb-4 ms-3">Top Pics for You</h2>
-                  <div className="card-flex d-flex justify-content-around" id="resp-cards">
-                    {chunk.map((item) => (
-                      <div key={item.id} className="card" id="movie-cards">
-                        <img
-                          src={`https://image.tmdb.org/t/p/w200${item.backdrop_path}`}
-                          className="card-img-top"
-                          alt={item.original_title}
-                        />
-                        <div className="card-body ">
-                          <span className="card-title" >{item.original_title}</span>
-                          <Link to={`/player/${item.id}`}><span className="bi bi-play"></span></Link>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#banners3"
-              data-bs-slide="prev"
-            >
-              <span className="carousel-control-prev-icon"></span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#banners3"
-              data-bs-slide="next"
-            >
-              <span className="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </section>
-
       </main>
       <footer id="footer-media">
         <div>
@@ -249,8 +167,6 @@ export function Home() {
           <span className="bi bi-youtube"></span>
         </div>
         <div className="services">
-
-
           <div >
             <span className="sub-footer">Audio Description</span>
             <span>Investor Relations</span>

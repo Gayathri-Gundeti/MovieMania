@@ -35,7 +35,7 @@ return(
     <div className="bg-style">
     <div className="bg-shade">
         <nav className="login-nav">
-            NETFLIX
+            MovieMania
         </nav>
         <section className="login-section">
             
@@ -48,10 +48,7 @@ return(
                     <input type="password" placeholder="Password" onChange={handlePassword}/>
                 </div>
 
-                <button className="btn btnSignin" onClick={handleSignin}>Sign In</button>
-
-                {/* <div className="my-3 text-center">OR</div>
-                <button className="btn btnUse">Use a sign-in code</button> */}
+                <button className="btnSignin" onClick={handleSignin}>Sign In</button>
                 <div className="my-3 text-center">Forgot password?</div>
                 <div className="my-3">
                     <input type="checkbox"/>&nbsp;
