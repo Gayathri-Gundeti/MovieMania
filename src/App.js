@@ -1,8 +1,8 @@
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
-import { EntryPage } from './Netflix-Components/Entry-Page/entry';
-import { Home } from './Netflix-Components/Home/home';
-import { Player } from './Netflix-Components/Player/player';
-import { Login } from './Netflix-Components/Login/login';
+import { EntryPage } from './Components/Entry-Page/entry';
+import { Home } from './Components/Home/home';
+import { Player } from './Components/Player/player';
+import { Login } from './Components/Login/login';
 import './App.css';
 
 function App() {
