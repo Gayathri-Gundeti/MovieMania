@@ -21,20 +21,14 @@ export function Home() {
     removeCookie('password');
     navigate("/");
   }
-  function handleMouseover(e) {
 
-
-  }
   useEffect(() => {
     LoadData();
 
 
   }, [])
 
-  const chunkedData = [];
-  for (let i = 0; i < data.length; i += 6) {
-    chunkedData.push(data.slice(i, i + 6));
-  }
+
   return (
     <div id="#container">
       <header>
@@ -80,7 +74,7 @@ export function Home() {
                 {
                   data.map(item =>
                     <div>
-                      <div><img key={item.id} src={`https://image.tmdb.org/t/p/w200${item.backdrop_path}`} height="200" onMouseOver={handleMouseover} /> </div>
+                      <div><img key={item.id} src={`https://image.tmdb.org/t/p/w200${item.backdrop_path}`} height="200"  /> </div>
                       <div className="my-3">
                         <span>{item.original_title}</span>
                         <Link to={`/player/${item.id}`}><span className="bi bi-play ms-3"></span></Link>
